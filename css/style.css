@@ -1,0 +1,672 @@
+@charset "UTF-8";
+
+/* 
+	Nome: CSS da Pomodoro Pizzeria;
+	Turma: 1º semestre de Sistemas para Internet;
+	Descrição: CSS do Projeto Integrador de PPSI I e Design Digital;
+	Versão: 09.06;
+	Autor: Larissa Rabello dos Santos;
+	R.A.: 2650831513016.
+*/
+
+
+/* IDs */
+
+/* estiliza o aside da home */
+
+aside#reservas{
+    position: absolute;
+    top:960px;
+    right: 0;
+    width: 27%;
+    margin-top: 0px;
+	margin-left: 0px;
+    margin-bottom:10px;
+    background-color:hsl(30, 26%, 77%); 
+}
+
+aside#reservas p, aside#reservas h3{
+    margin: 10px auto;
+    padding: 0 50px;
+    font-family: 'Open Sans Condensed', sans-serif;
+    font-size: 1.4em;   
+    color: hsl(30, 23%, 22%);
+}
+
+
+/* cria uma barra de rolagem para o cardápio - retirado após "dica estética" do professor
+
+#menu-barra {
+    position:relative;
+    float:left;
+    width:75%;
+    max-height: 700px;
+    overflow-y: auto;
+}
+
+*/
+
+aside#pagamento {
+	float: right;
+    width: 27%;
+    margin-top: 310px;
+	margin-left: 0px;
+    font-size:1.3em;
+    background-color: hsl(30, 26%, 77%); 
+}
+
+aside#pagamento a{
+    margin-left:120px;
+}
+
+aside#pagamento img {
+    width:35%;
+    margin: 0 auto;
+}
+  
+
+/* estiliza o aside do encontre-nos */
+
+aside#cliente {
+    position: absolute;
+    top:817px;
+    right: 0;
+    width: 27%;
+    margin-top: -10px;
+	margin-left: 0px;
+    font-family: 'Open Sans Condensed', sans-serif;
+    font-size:1em;
+    background-color:hsl(30, 26%, 77%);
+}
+
+aside#cliente p, h4 {
+    padding-left:15px;
+    margin-bottom:10px;
+}
+    
+aside#cliente button {
+    margin: 20px 30%;
+}
+
+/* remove os pontos de cada li da unordered list do nav*/
+
+ul#menu{
+    list-style: none;
+} 
+
+
+/* posiciona o input de troco do formulário da página delivery */
+
+#input-troco {
+    display: inline;
+}
+
+
+
+/* CLASSES */
+
+
+/* posiciona o mapa da google */
+
+.mapa {
+    margin-bottom: 10px;
+}
+
+.mapa iframe {
+    padding-left:60px;
+}
+
+
+/* estiliza os títulos */
+
+.titulos {
+    position: relative;
+    width: 100%;
+    height: 15%;
+    margin-top: 0;
+    padding:0 40px;
+    font-family: 'Poiret One', 'Century Gothic', sans-serif;
+    font-size: 2em;
+    font-weight: normal;
+    text-decoration: none;
+    color:#fff;
+    background-color: hsla(0, 39%, 45%, 0.88);
+    box-shadow: 2px 4px 2px rgba(0, 0, 0, 0.4);
+}
+
+.titulos-direita {
+    width: 100%;
+    left: 50%;
+    margin-top: 0;
+    padding:0 40px;
+    font-family: 'Poiret One', 'Century Gothic', sans-serif;
+    font-size: 2em;
+    font-weight: normal;
+    text-decoration: none;
+    color:#fff;
+    background-color: hsla(0, 39%, 45%, 0.88);
+    box-shadow: 2px 4px 2px rgba(0, 0, 0, 0.4);
+}
+
+
+.titulos-50 {
+    width: 50%; 
+}
+
+.titulos-70 {
+    width:70%;
+}
+
+.titulos-20 {
+    width: 20%;
+}
+
+/* estiliza os numeros de telefone do encontre-nos */
+.tel {
+    list-style: none;
+    font-family: 'Handle', 'Calibri', sans-serif;
+    font-size: 1.4em;
+    color:#fff;
+}
+
+/* tamanho da imagem de pizza na home */
+
+.img-index {
+    width: 100%;
+}
+
+
+/* estiliza a lista de imagens dentro do cardápio */
+
+.titulos-sugestao {
+    position:absolute;
+    top:812px;
+    right:0;
+    width: 18%;
+    margin-top: 0;
+    margin-right:30%;
+    padding:0 40px;
+    font-family:  'Poiret One', 'Century Gothic', sans-serif;
+    font-size: 2em;
+    font-weight: normal;
+    text-decoration: none;
+    color:#fff;
+    background-color: hsla(0, 39%, 45%, 0.88); 
+    box-shadow: 2px 4px 2px rgba(0, 0, 0, 0.4);
+}
+
+.espacamento-sugestao-bottom {
+    margin-bottom: 75px;
+}
+
+.espacamento-sugestao-top {
+    margin-top: 75px;
+}
+
+/* estiliza a section diferencial da página a pizzaria */
+
+.pizzaria-diferencial {
+    float: right;
+    width: 80%;
+    margin: 10px 0;
+    background-color: hsl(30, 24%, 42%);
+}
+
+.pizzaria-diferencial p {
+    margin-right: 38%;
+    margin-left: 10px;
+    padding: 0 10px;
+    font-family: 'Century Gothic', sans-serif;
+    font-size: 1.3em;
+    text-align: justify;
+    color: hsl(30, 26%, 77%);
+}
+
+/* estiliza a section conceito da página a pizzaria */
+
+.pizzaria-conceito {
+    width: 70%;
+    margin: 10px 0;
+    background-color: hsl(30, 24%, 42%);
+}
+
+.pizzaria-conceito p {
+    margin-left: 10%;
+    padding: 0 20%;
+    font-family: 'Century Gothic', sans-serif;
+    font-size: 1.3em;
+    text-align: justify;
+    color: hsl(30, 26%, 77%);
+    
+}
+.pizzaria-conceito section {
+    background-color: hsla(35, 32%, 39%, 0);
+}
+
+.pizzaria-conceito section img {
+    margin:0 50%;
+}
+    
+
+.conceito-img {
+    width: 30%;
+    margin: 0 60%;
+}
+
+/* estiliza  a section no topo da página menu */
+
+.menu-pizza {
+    width:70%;
+    text-align: justify;
+}
+
+.menu-pizza p {
+    padding-left:10px;
+    padding-right: 40px;
+}
+
+
+/* ajustes na posição do logo */
+
+.position-logo {
+    margin-top:-200px;
+}
+
+
+/* background do cabeçalho do site */
+
+.bcg-pizza {
+    background-image: url("../images/header-pizza.jpg");
+}
+
+.bcg-img {
+    position: relative;
+    z-index: -1;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 300px;
+}
+
+.bcg-img section {
+    position: fixed;
+    width: 100%;
+    height: 300px;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;    
+}
+
+
+/*riscas - os parametros são espessura, tipo e cor - sem ordem */
+
+.borda-top {
+    width:100%;
+    margin:0;
+    border-top:10px solid hsla(0, 82%, 37%, 0.4);
+}
+
+
+/* espaço para o nav estilizado */ 
+
+.nav-menu{
+    position: relative;
+    height: 100px;
+}
+
+
+ /* estiliza a fonte da observação na página delivery */
+
+.observacao {
+    margin-left: 40px;
+    font-size: .9em;
+    list-style: none;   
+}
+
+ 
+/* tomates como marcadores da li */
+
+li.marcador {
+    padding-left: 1.5em;
+    background-image: url('../images/tomate-dark.png');
+    background-size: 2em;
+    background-repeat: no-repeat;
+    list-style-type: none;
+}
+
+
+/* estiliza o conteúdo do site */
+
+.conteudo {
+    z-index: 1;
+    height: auto;
+    background-color: hsl(35, 34%, 64%);    
+} 
+
+
+/* estiliza o quadro de background na página delivery */
+
+.quadro-delivery {
+    width:100%;
+    height:650px;
+    padding: 110px;
+    padding-right: 350px;
+    margin-bottom: 20px; 
+    font-family: 'Handlee', 'Calibri', sans-serif;
+    font-size: 1.1em;
+    background-image: url('../images/board.png');
+    background-size: 80%;
+    background-repeat: no-repeat;
+    color:#fff;     
+}
+
+.quadro-delivery input {
+    margin-bottom: 15px;
+}
+
+.quadro-delivery button {
+    display:block;
+    margin: 0 auto;
+}
+.quadro-delivery p {
+    margin:10px;
+}
+
+/*estiliza o aviso e imagem sobre aniversários na página home */
+
+.bday {
+    position: relative;
+    top: 200px;
+    left: 118px;
+    width: 600px;
+    height: 100px; 
+    font-family: 'Marck Script', 'Monotype Corsiva', cursive;
+    font-size:2.5em; 
+    color: #fff;
+}
+
+.bday-balloon {
+    position: relative;
+    left: 600px;
+    bottom: 160px;
+    width: 280px;
+    height: 340px;  
+}
+
+
+/*Configuração do cardápio - página menu*/
+
+.cardapio dl{
+    float:left;
+    width:70%;
+    padding:10px;
+    color: hsl(30, 26%, 77%);
+}
+
+.cardapio dl dt {
+    height: 50px;
+    padding-left: 20px;
+}
+
+.cardapio dl dd {
+    height: 50px;
+    margin-bottom: 2px;
+}
+
+.cardapio ul {
+    float:right;
+    width:28%;
+    list-style: none;
+}
+
+.cardapio ul img {
+    width: 90%;
+    height: 100px;
+    margin-bottom: 5px;
+    border-radius: 4px;
+}
+
+
+/*aside da página menu*/
+
+.cardapio-aside {
+    float: right;
+    width: 25%;
+    height: 700px;
+    margin-top: 0px;
+    margin-left: 0px;
+    background-color: hsl(30, 24%, 42%); 
+}
+
+.cardapio-aside p {
+    padding:10px;
+    font-family: 'Century Gothic', sans-serif;
+    font-size: 1.2em;
+    text-align: justify;
+    color: hsl(30, 29%, 75%);
+}
+
+.cardapio-aside ol {
+    font-family: 'Handlee', 'Calibri', sans-serif;
+    font-size: 1.3em;
+    color: #fff;
+    margin-top: 10%;
+    padding-left:30%;
+    
+}
+
+/*foto e caixa da galeria */
+
+.foto {
+    float: left;
+    width: 320px;
+    height: 300px;
+    margin: 20px;
+    overflow: hidden;
+    border: 10px solid hsla(0, 28%, 18%, 0.88);
+    -webkit-box-shadow: 5px 5px 5px #111;
+    box-shadow: 5px 5px 5px #111;
+}
+
+.foto:hover {
+    cursor: pointer;
+} 
+
+/* imagem da galeria*/
+
+.galeria img {
+    width: 100%;
+    height: 100%;
+}
+ 
+
+/* posição dos links e imagens do nav */ 
+
+.position-encontre-nos {
+    position: absolute;
+    top:0;
+    right: 69px;
+}
+
+.position-delivery {
+    position: absolute;
+    z-index: 2;
+    top: 0;
+    right: 200px;
+}
+
+.position-a-pizzaria {
+    position: absolute;
+    z-index: 1;
+    top: 0;
+    right: 80px;
+}
+
+.position-menu {
+    position: absolute;
+    z-index: 3;
+    top: 0;
+    right: 276px;
+}
+
+.position-home {
+    position: absolute;
+    z-index: 4;
+    top: 0;
+    right: 150px; 
+}
+
+
+/* posiciona a caixa de texto do formulário da página delivery */
+
+.caixa-pedido {
+    float: right;
+    margin-top:10px;
+    padding-right:30px; 
+}
+
+
+/* posiciona as informações de pagamento do formulário da página delivery */
+
+.pagamento {
+    clear: none;
+    float:left;
+}
+
+
+/* define a posição como relativa */
+
+.relative {
+    position: relative;
+    z-index:1;
+}
+
+
+
+/* SELETORES SIMPLES E/OU AGRUPADOS */
+
+
+
+/* estiliza os h2 - talvez mudar */
+
+h2 {
+    font-family: 'Handlee', 'Calibri', sans-serif;
+    font-size:1.1em;
+}
+
+
+/* cabeçalho */
+
+body {
+    font-family: 'Century Gothic', sans-serif;
+    font-size: 14px;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+
+header {
+    z-index: 1;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    padding: 0px 20px;
+}
+
+header section {
+    max-width: 600px;
+    height: 300px;
+    margin: 0 auto;
+    padding-top: 120px;
+    text-align: center;
+    color: White;
+}
+
+header ul {
+    position: absolute;
+    top:250px;
+    right: 0px;
+    margin-right: 12px;
+}
+
+header ul li {
+    display:inline;
+}
+
+
+/* padroniza os articles */
+
+article {
+    margin: 2px 0; 
+    padding: 0;
+    font-family: 'Century Gothic', sans-serif;
+    font-size: 1.3em;
+    color: hsl(30, 26%, 77%);
+    background-color: hsl(30, 24%, 42%); 
+}
+
+article p {
+    padding: 0 40px;
+    text-align: justify;
+}
+
+
+/* alinha a caixa de texto da página delivery */
+
+input[type=text],textarea {
+    display: block;
+}
+
+    
+/* Abaixo o posicionamento */
+
+body {
+    width:100%;
+    /*Primeiro valor define topo e base, e segundo define esq. e direita, não esquecer */
+    margin:0 auto;  
+}
+
+
+article {
+    float:left;
+    width:70%;
+}
+
+
+aside p {
+    padding:10px;
+}
+
+
+section { 
+    clear:both;
+    margin-top: 0px;
+	margin-left: 0px;
+}
+
+
+footer {
+    clear: both;
+    height: 80px;
+    font-family: 'Century Gothic', sans-serif;
+    text-align:center;
+    color:hsl(30, 24%, 67%);
+    background-color:hsla(0, 24%, 37%, 0.96); 
+}
+
+footer p {
+    margin:0;
+}
+
+
+/* caixa tabela */
+
+table {
+    margin-left:100px;
+    margin-bottom:10px;
+	border: 1px solid black;
+    box-shadow: 2px 4px 2px rgba(0, 0, 0, 0.4);
+    background-color:#fff;
+}

@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html dir="ltr" lang=pt-BR>
+    <head>
+        <meta charset="utf-8">
+        <title>Pomodoro  Pizzeria</title>
+        <link rel="stylesheet" type="text/css" href="css/style.css"/>
+        <link href='http://fonts.googleapis.com/css?family=Poiret+One' rel='stylesheet' type='text/css'>
+        <link href='http://fonts.googleapis.com/css?family=Handlee' rel='stylesheet' type='text/css'>
+    </head>
+    <body>
+        <section class='bcg-img'>
+            <section class="bcg-pizza"></section>
+        </section>
+        <header>
+            <section>
+                <h1 class="logo-title"><a href="images/tomate-logo.png"><img class="position-logo" alt="Logotipo da Pomodoro Pizzeria" src="images/tomate-logo.png"/></a></h1>
+                <ul>
+                    <li><a href="images/instagram-icon.png" target="_blank"><img alt="Acesse nossa página no Instagram" src="images/instagram-icon.png"/></a></li>
+                    <li><a href="images/facebook-icon.png" target="_blank"><img alt="Acesse nossa página no Facebook" src="images/facebook-icon.png"/></a></li>
+                    <li><a href="images/twitter-icon.png" target="_blank"><img alt="Acesse nossa página no Twitter" src="images/twitter-icon.png"/></a></li>
+                    <li><a href="images/foursquare-icon.png" target="_blank"><img alt="Acesse nossa página no Foursquare" src="images/foursquare-icon.png"/></a></li>
+                </ul>
+            </section>
+        </header>
+        <section class='conteudo'>    
+            <nav class="borda-top nav-menu"> 
+                <ul id="menu">
+                    <li> <a href="index.html"><img class="position-home" src="images/home.png" title="Home" alt="Acessar a Página Home"/></a></li>
+                    <li> <a href="menu.html"><img class="position-menu" src="images/menu.png" title="Menu" alt="Acessar a Página Menu"/></a></li>
+                    <li> <a href="a-pizzaria.html"><img class="position-a-pizzaria" src="images/a-pizzaria.png" title="A Pizzaria" alt="Acessar a Página A Pizzaria"/></a></li>
+                    <li> <a href="delivery.html"><img class="position-delivery" src="images/delivery.png" title="Delivery" alt="Acessar a Página Delivery"/></a></li>
+                    <li> <a href="encontre-nos.html"><img class="position-encontre-nos" src="images/encontre-nos.png" title="Encontre-nos" alt="Acessar Página Encontre-nos"/></a></li>
+                </ul>  
+            </nav>      
+            <article>
+                <h1 class="titulos">Você pode saborear nossa pizza da maneira que preferir:</h1>
+                <ul>
+                    <li class="marcador">Conhecer nosso aconchegante ambiente, onde você se sentirá em uma verdadeira pizzaria italiana;</li>
+                    <li class="marcador">Realizar o pedido no modelo Take Away. Peça por telefone ou no site e retire em nosso restaurante;</li>
+                    <li class="marcador">Realizar o pedido Delivery* por telefone ou no site e ter a comodidade da entrega em casa! </li>
+                    <li class="observacao">*Há a cobrança da entrega</li>
+                </ul>
+                <section class="quadro-delivery">
+                    <h2>Faça seu pedido</h2>
+                        <form>
+                            <section class="caixa-pedido">
+                                <textarea name="items" rows="18" cols="25">
+                                    1 x Pizza Alice
+                                    1 x Hambúrguer Classic
+                                </textarea>
+                                <p>Total: XX.XX</p>
+                            </section>
+                            <label>Meu nome</label>
+                            <input type="text" name="nome" placeholder="Insira seu nome">
+                            <label>Meu telefone</label>
+                            <input type="text" name="telefone" placeholder="Insira seu telefone">
+                            <label>Meu Endereço</label>
+                            <input type="text" name="endereço" placeholder="Insira seu endereço">
+                            <label>Meu pedido: </label>
+                            <input type="radio" name="tipo_pedido" value="delivery" checked> Delivery
+                            <input type="radio" name="tipo_pedido" value="take_away" checked> Take away
+                            <section class="pagamento">
+                                <label>Pagamento: </label>
+                                <input type="radio" name="pagamento" value="dinheiro" checked> Dinheiro
+                                <section>
+                                    <label>Será necessário troco?</label>
+                                    <input type="checkbox" name="troco" value="Troco">Sim, troco para
+                                    <input id="input-troco" type="text" name="valor_troco" placeholder="Insira o valor em Reais (R$)">
+                                </section>
+                                <input type="radio" name="pagamento" value="cartao" checked> Cartão
+                                <button type="button">Confirmar Pedido</button>
+                            </section>
+                        </form>
+                </section>
+            </article>
+            <aside id="pagamento">
+                <h3 class="titulos-direita">Métodos de pagamento na POMODORO</h3>
+                <p>Aceitamos o pagamento em:</p>
+                <a href="images/card.jpg"><img alt="Bandeiras Aceitas" src="images/card.jpg" /></a>
+                <p>Não aceitamos cheques</p>	
+            </aside>  
+            <footer class="borda-top">
+                <p>Pomodoro Pizzeria</p>
+                <p>All Rights Reserved - 2015</p>
+                <p>Desenvolvimento <cite><a href="https://www.facebook.com/lari.rabello">Larissa Rabello</a></cite></p>
+            </footer>
+        </section>
+    </body>
+</html>
